@@ -1,0 +1,69 @@
+main.admin_main{
+    position: relative;
+}
+.buttons-group{
+    width: 100%;
+}
+.addNewButton{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.first-group .button-g{
+    margin: 10px 20px;
+}
+.import-group{
+    display: flex;
+    justify-content: space-between;
+}
+.addNewButton form{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width: 49%;
+    padding: 20px 10px;
+    margin: 20px 0;
+}
+/* .addNewButton form button{
+    margin: 10px 0;
+} */
+/* .addNewButton button{
+    margin: 2rem;
+} */
+.modal-footer{
+    display: flex;
+    /* flex-direction: column; */
+}
+.flexLeft{
+    width: 100%;
+    text-align: right;
+}
+.addNewModal{
+    display: flex;
+    flex-direction: row;
+}
+.admin_main{
+    position: relative;
+}
+.bs-spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bs-spinner-border{
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 992px){
+    .addNewButton form{
+        width: 100%;
+    }
+}

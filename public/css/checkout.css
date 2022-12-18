@@ -1,0 +1,202 @@
+.coupon-que{
+    margin:2rem 0;
+    margin-bottom: 0;
+    height: 6.5rem;
+    width: 100%;
+    background: #f7f6f7;
+    color: #515151;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    border-top: 3px solid #27ae61;
+}
+.coupon-que p{
+    padding-left: 2rem;
+}
+.coupon-que span{
+    height: 100%;
+}
+.coupon-que p i{
+    color: white;
+    border: 1px solid #27ae61;
+    border-top: 3px solid #27ae61;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+#entrCupn{
+    color: #515151;
+    cursor: pointer;
+}
+#entrCupn a:hover{
+    text-decoration: underline;
+    color: #27ae61;
+}
+
+
+.open-that-coupon-h0{
+    max-height: 0px;
+    overflow: hidden; 
+    transition: .5s ease;
+}
+.h-auto{
+    max-height: 190px;
+}
+.coupon-open-que{
+    margin: 3rem 0;
+    border: 1px solid #515151;
+    border-radius: 5px;
+    width: 100%;
+    max-height: 19rem;
+}
+.coupon-open-que p{
+    font-size: 1.6rem;
+    margin: 2rem 3rem;
+    margin-right: 1rem;
+}
+.coupon-field input{
+    width: 50%;
+    height: 4rem;
+    margin: 0 0 2rem 4rem;
+    font-size: 1.6rem;
+    padding-left: 2rem;
+    border: 1px solid black;
+}
+.coupon-field button{
+    height: 4rem;
+    width: fit-content;
+    padding: 0 1rem;
+    border-radius: 5px;
+    color: white;
+    background: #27ae61;
+    margin-left: 2rem;
+}
+
+.billing-address{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+.address1,
+.address2{
+    width: 50%;
+    padding-left: 5rem;
+}
+.address1 form,
+.address2 form{
+    font-size: 1.6rem;
+}
+.address1 form input,
+.address2 form input{
+    font-size: 1.6rem;
+}
+.form-group{
+    margin-top: 1rem;
+}
+#checkBoxOpen{
+    cursor: pointer;
+}
+.addTogg{
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+.actTogg{
+    max-height: 85rem;
+}
+.set-fs{
+    font-size: 1.6rem;
+}
+.payment-section{
+    background: #ebe9eb;
+}
+.payment-section h2{
+    padding: 2rem 0 2rem 2rem;
+}
+.payCash{
+    padding: 2rem 0 2rem 2rem;
+    font-size: 1.6rem;
+    background: #dfdcde;
+    margin: 0 2rem;
+    position: relative;
+    border-radius: 5px;
+}
+.payCash::before{    
+    content: '';
+    display: block;
+    border: 1em solid #dfdcde;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    top: -1.5rem;
+    left: 0;
+    margin: -1em 0 0 2em;
+}
+.hr{
+    margin: 2rem 0;
+    height: 1px;
+    width: 100%;
+    background: black;
+}
+.payment-section p{
+    padding: 0 1rem 2rem 2rem;
+    font-size: 1.6rem;
+}
+.cash-btn{
+    width: 100%;
+    text-align: right;
+}
+.cash-btn button{
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    background: #27ae61;
+    color: white;
+}
+.checkout-cart-space{
+    padding: 20px 0;
+}
+
+
+
+@media (max-width:992px){
+    .h-auto{
+        max-height: 290px;
+    }
+    .coupon-open-que{
+        margin-bottom: 2rem;
+        max-height: 29rem;
+    }
+    .coupon-field{
+        display: flex;
+        flex-direction: column;
+    }
+    .coupon-field input{
+        width: 80%;
+        height: 4rem;
+        margin: 0 auto;
+        font-size: 1.6rem;
+        padding-left: 1rem;
+    }
+    .coupon-field button{
+        height: 4rem;
+        width: 80%;
+        padding: 0;
+        border-radius: 5px;
+        color: white;
+        background: #27ae61;
+        margin: 2rem auto;
+        margin-bottom: 5rem;
+    }
+    .address1,
+    .address2{
+        width: 100%;
+        padding-left: 1rem;
+    }
+    .address2{
+        margin-top: 5rem;
+    }
+    .billing-address{
+        flex-direction: column;
+    }
+}

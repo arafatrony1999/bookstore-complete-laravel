@@ -1,0 +1,35 @@
+.form-area{
+    margin: 2rem 0;
+}
+.form-area-login{
+    width: 50%;
+}
+.form-area h1{
+    padding: 2rem 0;
+}
+.form-border{
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+}
+.form-area-login form{
+    color: black;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+.form-area-login form input,
+.form-area-login form button{
+    margin: 1.5rem 0;
+    font-size: 1.6rem;
+}
+.bc{
+    color: black;
+}
+.bc:hover{
+    color: black;
+}
+
+@media screen and (max-width: 992px){
+    .form-area-login{
+        width: 100%;
+    }
+}

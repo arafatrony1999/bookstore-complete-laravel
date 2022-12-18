@@ -1,0 +1,147 @@
+.profile-section{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.profile-left{
+    width: 25%;
+}
+.profile-main{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    border: 1px black dotted;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+}
+.profile-other{
+    padding-left: 10px;
+}
+.profile-catagory{
+    width: 100%;
+    border: 1px black dotted;
+    margin-top: 30px;
+}
+.profile-catagory a{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    line-height: 60px;
+    width: 100%;
+    color: black;
+    padding-left: 20px;
+    border-bottom: 1px dotted gray;
+    justify-content: center;
+}
+.profile-catagory a:hover{
+    transition: .5s;
+    background: linear-gradient(to right, #ffffff 0%, #deffe4 100%);
+}
+.an-active{
+    background: linear-gradient(to right, #ffffff 0%, #deffe4 100%);
+}
+.profile-image{
+    width: 50px;
+}
+.profile-image img{
+    width: 50px;
+}
+.alert-box-email,
+.alert-box-password{
+    color: red;
+}
+.error-email,
+.error-password{
+    border: 2px solid red;
+}
+.alert-box-fname,
+.alert-box-lname,
+.alert-box-phn,
+.alert-box-email2,
+.alert-box-pwd,
+.alert-box-rePwd{
+    color: red;
+}
+.error-box-fname,
+.error-box-lname,
+.error-box-phn,
+.error-box-email2,
+.error-box-pwd,
+.error-box-rePwd{
+    border: 2px solid red;
+}
+.warning-alert{
+    color: red;
+}
+a.last-anchor{
+    display: inline-block;
+    line-height: 50px;
+    background: red;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+a.last-anchor span{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.profile-right{
+    width: 70%;
+    border: 1px black dotted;
+    padding: 20px;
+    border-top: 3px solid green;
+    border-radius: 5px;
+}
+.profile-right h2{
+    border-bottom: 1px dotted black;
+    padding-bottom: 10px;
+}
+.profile-form form{
+    padding-top: 30px;
+}
+.profile-form,
+.profile-form input{
+    font-size: 16px;
+}
+
+.item1{
+    width: 25%;
+}
+.wishlist-items{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+.wishlist-items .right-items-single-card{
+    width: 40%;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .profile-section{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .profile-left,
+    .profile-right{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .wishlist-items{
+        padding: 0;
+    }
+    .wishlist-items .right-items-single-card{
+        width: 90%;
+    }
+}

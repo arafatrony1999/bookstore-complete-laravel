@@ -1,0 +1,279 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.inside-left{
+    width: 25%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.inside-left::-webkit-scrollbar {
+    width: 0px;
+}
+
+.inside-right{
+    position: relative;
+    /* left: 25%; */
+    width: 75%;
+}
+.inside-right-headings{
+    display: flex;
+    flex-direction: row;
+}
+.heading-left{
+    padding: 2rem 1rem;
+}
+.browse-books{
+    width: 100%;
+}
+.browse-books-items a{
+    display: inline-block;
+    line-height: 5rem;
+    width: 80%;
+    color: black;
+    border-bottom: 1px dotted black;
+    padding-left: 1rem;
+    font-weight: bolder;
+}
+.browse-books-items a:hover{
+    background: rgb(245, 239, 239);
+    color: #27ae61;
+}
+.browse-books-items a i{
+    margin: 0 2rem;
+}
+.fa-rotate-45 {
+    transform: rotate(15deg);
+    transform: rotateZ(15deg);
+}
+.custom-height{
+    height: 5rem;
+}
+.right-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.right-heading{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+}
+.right-heading h3{
+    margin: 3rem;
+}
+.right-heading select{
+    font-size: 1.6rem;
+    margin: 2.25rem 0;
+    padding: 1rem 2rem;
+    padding-right: 0;
+    height: fit-content;
+    width: fit-content;
+    border: solid 1px black;
+}
+
+.left-heading{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+}
+.collapse-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 2.25rem 0;
+    margin-left: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    border: #27ae61 1px solid;
+}
+.collapse-options i{
+    display: inline-block;
+    color: #27ae61;
+    font-weight: bolder;
+}
+.collapse-options:hover{
+    background: #27ae61;
+}
+.collapse-options:hover i{
+    color: white;
+}
+.active-icon{
+    background: #27ae61;
+}
+.active-icon i{
+    color: white;
+}
+.right-items-single-card{
+    border: 1px solid black;
+    position: relative;
+    width: 25%;
+    margin: 1rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.right-items-single-card:hover{
+    border: 1px solid #27ae61;
+}
+.right-items-single-card::before{
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+    transform: skewY(14deg);
+    transform-origin: 0px 0px 0px;
+    background-color: #f5f5f5;
+}
+.right-items-single-card img{
+    padding-top: 2rem;
+    height: 30rem;
+}
+.right-items-single-card:hover .product-cart-button{
+    height: 5rem;
+    transition: .5s;
+}
+.list-view{
+    position: relative;
+    width: 90%;
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    /* transition: .5s; */
+    border: 1px solid #27ae61;
+}
+.list-view img{
+    height: 22rem;
+    padding-left: 2rem;
+}
+.list-view .product-cart-button{
+    position: absolute;
+    height: 5rem;
+    width: 30rem;
+    left: 100%;
+    bottom: 1rem;
+    margin-left: 5rem;
+}
+.list-view .name-and-price{
+    display: block;
+    margin-bottom: auto;
+    margin-top: 2rem;
+    text-align: start;
+    margin-left: 5rem;
+}
+.list-view .name-and-price h3,
+.list-view .name-and-price h5{
+    line-height: 3rem;
+    font-size: 1.8rem;
+}
+
+.pagination-section{
+    width: 100%;
+    margin: 3rem 0;
+}
+.pagination-buttons{
+    display: flex;
+    flex-direction: row;
+}
+.pag-btn a{
+    display: inline-block;
+    width: 5rem;
+    line-height: 4rem;
+    margin: 0 1rem;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+}
+.pag-btn a.active-pag{
+    background: #27ae61;
+    color: white;
+}
+.pag-btn a:hover{
+    background: #27ae61;
+    color: white;
+}
+
+@media (max-width:992px) {
+    .flex-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .inside-left{
+        width: 100%;
+    }
+    .inside-right{
+        width: 100%;
+        left: 0;
+    }
+    .right-items-single-card{
+        width: 75%;
+    }
+    .list-view{
+        width: 100%;
+        height: 30rem;
+    }
+    .list-view .name-and-price{
+        display: block;
+        margin-bottom: auto;
+        margin-top: 5rem;
+        text-align: start;
+        margin-left: 2rem;
+    }
+    .list-view .product-cart-button{
+        position: absolute;
+        height: 5rem;
+        width: 90vw;
+        left: 0;
+        top: 100%;
+        margin-left: 0;
+    }
+    .list-view img{
+        height: 20rem;
+        padding-bottom: 5rem;
+    }
+    .right-heading{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .right-heading select{
+        font-size: 1.3rem;
+        margin-left: 12.5%;
+    }
+    .right-heading h3{
+        margin: 1rem 0;
+        margin-left: 12.5%;
+    }
+    .inside-right-headings{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-heading{
+        width: 100%;
+    }
+
+
+    
+    .pagination-section{
+        padding-left: 10%;
+    }
+    .pag-btn a{
+        width: 4rem;
+        line-height: 3rem;
+    }
+}
